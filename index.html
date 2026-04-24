@@ -1,18 +1,300 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="vi">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nvnkrus | Computational Mechanics</title>
+  <meta name="description" content="Trang cá nhân của nvnkrus, dùng để tổng hợp các repository hay về programming for computational mechanics trên GitHub.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">nvnkrus</a>
+      <nav class="menu" aria-label="Main Navigation">
+        <a href="#about">Giới Thiệu</a>
+        <a href="#top-picks">Top Picks</a>
+        <a href="#collections">Collections</a>
+        <a href="#publish">Publish</a>
+      </nav>
+    </div>
+  </header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal GitHub Page</p>
+          <h1>Open-source computational mechanics, được gom lại gọn gàng để dễ học và dễ đào sâu.</h1>
+          <p class="lead">
+            Đây là homepage cá nhân của <strong>nvnkrus</strong> theo hướng học thuật và kỹ thuật:
+            một nơi để lưu các repository tốt về finite elements, multiphysics, structural mechanics,
+            CFD và HPC trong cộng đồng GitHub.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#collections">Xem Collections</a>
+            <a class="button secondary" href="https://github.com/nvnkrus">GitHub Profile</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="stat">
+            <strong>16</strong>
+            <span>repositories tiêu biểu</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>nhóm chủ đề chính</span>
+          </div>
+          <div class="stat">
+            <strong>3</strong>
+            <span>lối vào nhanh: beginner, research, HPC</span>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+    <section class="intro-strip" id="about">
+      <div class="container intro-grid">
+        <article class="intro-card">
+          <h2>Trang này dùng để làm gì?</h2>
+          <p>
+            Không phải danh bạ đầy đủ của mọi solver. Mục tiêu là chọn ra những repo đáng đọc,
+            đáng theo dõi và có ích thực sự cho việc học, nghiên cứu và xây workflow computational mechanics.
+          </p>
+        </article>
+        <article class="intro-card">
+          <h2>Dành cho ai?</h2>
+          <p>
+            Người mới muốn bắt đầu với FEM, người làm research cần framework nghiêm túc hơn,
+            và cả những ai quan tâm HPC, GPU, CFD hoặc multiphysics ở quy mô lớn.
+          </p>
+        </article>
+        <article class="intro-card">
+          <h2>Cách đọc nhanh</h2>
+          <p>
+            Nếu bạn cần một điểm bắt đầu rõ ràng, hãy kéo xuống phần <strong>Top Picks</strong>.
+            Nếu bạn đã biết mình cần gì, đi thẳng tới từng nhóm chủ đề bên dưới.
+          </p>
+        </article>
+      </div>
+    </section>
 
+    <section class="section" id="top-picks">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Top Picks</p>
+          <h2>Bắt đầu theo đúng mục tiêu của bạn</h2>
+          <p class="section-lead">
+            Một shortlist nhanh để bạn không phải đi giữa quá nhiều framework ngay từ đầu.
+          </p>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Cho Người Mới Bắt Đầu</h3>
+            <p><strong>scikit-fem</strong> để hiểu FEM assembly một cách trong sáng.</p>
+            <p><strong>SfePy</strong> để thử PDEs bằng Python mà chưa cần nhảy vào framework lớn.</p>
+            <p><strong>PyVista</strong> để nhìn thấy mesh và kết quả ngay, học nhanh hơn nhờ trực quan hóa.</p>
+          </article>
+          <article class="card">
+            <h3>Cho Research</h3>
+            <p><strong>FEniCS / DOLFINx</strong> để đi từ weak form sang code nghiên cứu rất nhanh.</p>
+            <p><strong>deal.II</strong> nếu bạn cần adaptive methods và codebase hàn lâm, sâu về PDE.</p>
+            <p><strong>Gridap.jl</strong> nếu bạn thích Julia và muốn thử nghiệm formulation rất linh hoạt.</p>
+          </article>
+          <article class="card">
+            <h3>Cho HPC</h3>
+            <p><strong>MFEM</strong> cho high-order FEM và hiệu năng trên kiến trúc hiện đại.</p>
+            <p><strong>MOOSE</strong> cho multiphysics quy mô lớn với solver stack trưởng thành.</p>
+            <p><strong>nekRS</strong> cho GPU CFD và high-order computing ở hướng exascale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Collections</p>
+          <h2>Các repositories được gom theo chủ đề phù hợp</h2>
+          <p class="section-lead">
+            Danh sách dưới đây ưu tiên những dự án có tầm ảnh hưởng, tài liệu tốt hoặc giá trị học thuật và thực hành rõ ràng.
+          </p>
+        </div>
+
+        <div class="topic-block">
+          <div class="topic-head">
+            <h3>Core FEM Libraries</h3>
+            <p>Nền tảng để học PDE formulations, finite element assembly, adaptivity và solver design.</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card">
+              <h4>FEniCS / DOLFINx</h4>
+              <p>Framework rất mạnh cho workflow variational forms bằng C++ và Python.</p>
+              <a href="https://github.com/FEniCS/dolfinx">github.com/FEniCS/dolfinx</a>
+            </article>
+            <article class="repo-card">
+              <h4>deal.II</h4>
+              <p>Thư viện FEM kinh điển cho adaptive methods và nghiên cứu PDE quy mô lớn.</p>
+              <a href="https://github.com/dealii/dealii">github.com/dealii/dealii</a>
+            </article>
+            <article class="repo-card">
+              <h4>MFEM</h4>
+              <p>Nhẹ, mạnh, rất đáng đọc nếu bạn quan tâm high-order và parallel finite elements.</p>
+              <a href="https://github.com/mfem/mfem">github.com/mfem/mfem</a>
+            </article>
+            <article class="repo-card">
+              <h4>Gridap.jl</h4>
+              <p>Julia toolbox với API biểu diễn weak form rất đẹp và hợp cho prototyping.</p>
+              <a href="https://github.com/gridap/Gridap.jl">github.com/gridap/Gridap.jl</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div class="topic-head">
+            <h3>Multiphysics Platforms</h3>
+            <p>Hữu ích khi bài toán có coupling mạnh: thermo-mechanics, porous media, reactive transport hay FSI.</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card">
+              <h4>MOOSE</h4>
+              <p>Framework multiphysics implicit coupling rất mạnh và giàu module ứng dụng.</p>
+              <a href="https://github.com/idaholab/moose">github.com/idaholab/moose</a>
+            </article>
+            <article class="repo-card">
+              <h4>Kratos Multiphysics</h4>
+              <p>Rất phù hợp cho pipeline mô phỏng công nghiệp và các module fluid-structure-DEM.</p>
+              <a href="https://github.com/KratosMultiphysics/Kratos">github.com/KratosMultiphysics/Kratos</a>
+            </article>
+            <article class="repo-card">
+              <h4>ElmerFEM</h4>
+              <p>Dự án lâu đời và đa dụng, bao phủ nhiều lớp bài toán multiphysics.</p>
+              <a href="https://github.com/ElmerCSC/elmerfem">github.com/ElmerCSC/elmerfem</a>
+            </article>
+            <article class="repo-card">
+              <h4>NGSolve</h4>
+              <p>Cân bằng tốt giữa hiệu năng C++ và khả năng scripting nhanh bằng Python.</p>
+              <a href="https://github.com/NGSolve/ngsolve">github.com/NGSolve/ngsolve</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div class="topic-head">
+            <h3>Structural &amp; Solid Mechanics</h3>
+            <p>Dành cho structural analysis, solid mechanics, earthquake engineering và explicit dynamics.</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card">
+              <h4>OpenSees</h4>
+              <p>Rất quan trọng trong structural dynamics và earthquake engineering.</p>
+              <a href="https://github.com/OpenSees/OpenSees">github.com/OpenSees/OpenSees</a>
+            </article>
+            <article class="repo-card">
+              <h4>CalculiX</h4>
+              <p>Open-source FEA gần với phong cách các CAE truyền thống, tốt để học solver cấu trúc.</p>
+              <a href="https://github.com/Dhondtguido/CalculiX">github.com/Dhondtguido/CalculiX</a>
+            </article>
+            <article class="repo-card">
+              <h4>OpenRadioss</h4>
+              <p>Đáng chú ý cho impact, crash, nonlinear dynamics và virtual testing.</p>
+              <a href="https://github.com/OpenRadioss/OpenRadioss">github.com/OpenRadioss/OpenRadioss</a>
+            </article>
+            <article class="repo-card">
+              <h4>SfePy</h4>
+              <p>Linh hoạt, Pythonic, phù hợp để thử coupled PDEs và học FEM có kiểm soát.</p>
+              <a href="https://github.com/sfepy/sfepy">github.com/sfepy/sfepy</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div class="topic-head">
+            <h3>CFD &amp; HPC Mechanics</h3>
+            <p>Nhóm dành cho fluid dynamics, optimization, high-order methods và chạy ở quy mô lớn.</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card">
+              <h4>SU2</h4>
+              <p>Mạnh cho CFD, PDE-constrained optimization và aerodynamic design.</p>
+              <a href="https://github.com/su2code/SU2">github.com/su2code/SU2</a>
+            </article>
+            <article class="repo-card">
+              <h4>OpenFOAM</h4>
+              <p>Hệ sinh thái CFD open-source lớn và có ảnh hưởng sâu rộng nhất hiện nay.</p>
+              <a href="https://github.com/OpenFOAM/OpenFOAM-dev">github.com/OpenFOAM/OpenFOAM-dev</a>
+            </article>
+            <article class="repo-card">
+              <h4>nekRS</h4>
+              <p>GPU-accelerated CFD solver theo hướng exascale và high-order computing.</p>
+              <a href="https://github.com/Nek5000/nekRS">github.com/Nek5000/nekRS</a>
+            </article>
+            <article class="repo-card">
+              <h4>Nek5000</h4>
+              <p>Code nền tảng kinh điển cho spectral element CFD và nhiều dòng solver kế tiếp.</p>
+              <a href="https://github.com/Nek5000/Nek5000">github.com/Nek5000/Nek5000</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div class="topic-head">
+            <h3>Python &amp; Supporting Tools</h3>
+            <p>Nhẹ hơn, dễ học hơn và rất hợp với workflow nghiên cứu hoặc giảng dạy.</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card">
+              <h4>scikit-fem</h4>
+              <p>Lựa chọn tuyệt vời để học finite element assembly bằng Python thuần.</p>
+              <a href="https://github.com/kinnala/scikit-fem">github.com/kinnala/scikit-fem</a>
+            </article>
+            <article class="repo-card">
+              <h4>PyVista</h4>
+              <p>Công cụ gần như mặc định để trực quan hóa mesh và simulation results.</p>
+              <a href="https://github.com/pyvista/pyvista">github.com/pyvista/pyvista</a>
+            </article>
+            <article class="repo-card">
+              <h4>meshio</h4>
+              <p>Rất thực dụng để chuyển đổi mesh formats và nối pipeline giữa nhiều solver.</p>
+              <a href="https://github.com/nschloe/meshio">github.com/nschloe/meshio</a>
+            </article>
+            <article class="repo-card">
+              <h4>Netgen</h4>
+              <p>Đáng xem nếu bạn quan tâm meshing, geometry preprocessing và workflow FEM.</p>
+              <a href="https://github.com/NGSolve/netgen">github.com/NGSolve/netgen</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publish">
+      <div class="container">
+        <div class="publish-card">
+          <div>
+            <p class="eyebrow">Deploy</p>
+            <h2>Cách đưa bản này lên `nvnkrus.github.io`</h2>
+            <p>
+              Vì website hiện tại của bạn vẫn là template mặc định của GitHub Pages,
+              bạn chỉ cần thay file `index.html` cũ bằng bản mới này và thêm `styles.css`.
+            </p>
+          </div>
+          <div class="steps">
+            <p>1. Mở repository đang phục vụ `nvnkrus.github.io`.</p>
+            <p>2. Thay `index.html` bằng file mới trong workspace này.</p>
+            <p>3. Thêm file `styles.css` cùng thư mục gốc.</p>
+            <p>4. Commit và push lên branch đang publish GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>nvnkrus.github.io</p>
+      <a href="https://github.com/nvnkrus">github.com/nvnkrus</a>
+    </div>
+  </footer>
 </body>
 </html>
